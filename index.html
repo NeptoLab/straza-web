@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straza - Strategic Multiplayer Card Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #89c5ff url('bg.png') center center / contain no-repeat fixed;
+            min-height: 100vh;
+            overflow: auto;
+        }
+        .straza-link {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: white;
+            font-weight: 800;
+            -webkit-text-stroke: 2px #6bb5e0;
+            paint-order: stroke fill;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .straza-link:hover {
+            -webkit-text-stroke: 2px #3a8ec2;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="relative flex items-center justify-center min-h-screen">
+    <!-- Links spread around the center logo -->
+    <a href="/" class="straza-link text-3xl sm:text-4xl absolute" style="top: 18%; left: 12%;">home</a>
+    <a href="/privacy.html" class="straza-link text-3xl sm:text-4xl absolute" style="top: 30%; right: 8%;">privacy</a>
+    <a href="/terms.html" class="straza-link text-3xl sm:text-4xl absolute" style="bottom: 33%; left: 18%;">terms</a>
+
+    <!-- Store badges -->
+    <div class="absolute flex gap-4" style="bottom: 40px; right: 8%;">
+        <a href="#" class="transition hover:scale-105">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-12">
+        </a>
+        <a href="#" class="transition hover:scale-105">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-12">
+        </a>
+    </div>
+
+    <footer class="absolute bottom-3 text-white text-xs">&copy; 2026 NeptoLab</footer>
+</body>
+</html>
